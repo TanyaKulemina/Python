@@ -7,7 +7,7 @@
 # 60 -> 10  40  10
 
 summa = int(input('Введите число: '))
-if summa % 666 == 0:
+if summa % 6 == 0:
     p = summa // 6
     s = p
     k = 4 * s

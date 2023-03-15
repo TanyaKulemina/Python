@@ -13,5 +13,3 @@ if x % n == 0 or x % m == 0:
     print("yes")
 else:
     print("no")
-
-e
