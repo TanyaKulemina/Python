@@ -18,21 +18,20 @@
 # ==>
 # 1 2 3
 
-text = 'anton'
-list = []
+n = int(input("Введите число холодильников: "))
+list = list()
 
-for i in range(1, int(input("Введите число холодильников: ")) + 1):
-    code = input("Введите код холодильника: ")
-    result = ""
-    for j in text:
-        if j in code:
-            result = result + j
-            code = code[code.find(j):]
-        
-    if result == 'anton':
-        list.append(i)
-        
-print(*list) 
+for i in range(n):
+   list.append(input(f"Введите строку c данными для холодильника {i+1}: "))
 
-      
-
+for i in range(len(list)):
+    if "a" in list[i]:
+        list[i+1:len(list):1]
+        if "n" in list[i]:
+            list[i+1:len(list):1]
+            if "t" in list[i]:
+                list[i+1:len(list):1]
+                if "o" in list[i]:
+                    list[i+1:len(list):1]
+                    if "n" in list[i]:
+                        print(i+1)
