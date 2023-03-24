@@ -25,21 +25,10 @@ print(*list)
 max = 0
 
 for i in range(len(list)):
-    if i == 0:
-        sum = list[i] + list [i + 1] + list [len(list) - 1]
-        if sum > max:
-            max = sum
-            number = i
-    elif i == len(list) - 1:
-        sum = list[i] + + list [i - 1] + list [len(list)- i]
-        if sum > max:
-            max = sum 
-            number = i
-    else:
-        sum = list[i] + list [i+1] + list [i-1]
-        if sum > max:
-            max = sum   
-            number = i
+    sum = list[i - 2] + list [i - 1] + list [i]
+    if sum > max:
+        max = sum   
+        number = i - 1
 print(number)
 print(max)
 
